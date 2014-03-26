@@ -37,7 +37,7 @@
             <!--springMVC架包-->
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>3.2.0.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <!--spring架包 end-->
 
@@ -105,6 +105,8 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
+            <!--范围为test,不会在发布里出现-->
+            <scope>test</scope>
         </dependency>
         <!--测试架包 end-->
         
