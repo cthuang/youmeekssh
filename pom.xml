@@ -1,0 +1,140 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--项目基本信息 start-->
+    <groupId>com.youmeek.ssh</groupId>
+    <artifactId>youmeekssh</artifactId>
+    <packaging>war</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>youmeekssh Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+    <!--项目基本信息 end-->
+
+    <!--spring版本变量 start-->
+    <properties>
+        <spring.version>3.2.0.RELEASE</spring.version>
+    </properties>
+    <!--spring版本变量 end-->
+
+    <!--架包依赖 start-->
+    <dependencies>
+        <!--spring架包 start-->
+        <dependency>
+            <!--spring核心架包-->
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <!--这个变量指代上面的-->
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <!--spring测试架包-->
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <!--springMVC架包-->
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>3.2.0.RELEASE</version>
+        </dependency>
+        <!--spring架包 end-->
+
+
+        <!--hibernate4架包 start-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>4.2.2.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.0-api</artifactId>
+            <version>1.0.1.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.common</groupId>
+            <artifactId>hibernate-commons-annotations</artifactId>
+            <version>4.0.2.Final</version>
+        </dependency>
+        <dependency>
+            <!--不知道这个是不是hibernate这个antlr-->
+            <groupId>org.hibernate</groupId>
+            <artifactId>antlr</artifactId>
+            <version>2.7.5H3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.dom4j</groupId>
+            <artifactId>com.springsource.org.dom4j</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>3.15.0-GA</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
+            <version>3.1.0.GA</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.spec.javax.transaction</groupId>
+            <artifactId>jboss-transaction-api_1.1_spec</artifactId>
+            <version>1.0.1.Final</version>
+        </dependency>
+        <!--hibernate4架包 end-->
+
+        <!--数据库连接以及JDBC组件架包 start-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.21</version>
+        </dependency>
+        <dependency>
+            <!--这个组件具体可以看这里介绍:http://www.oschina.net/p/druid-->
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+        <!--数据库连接以及JDBC组件架包 end-->
+
+        <!--测试架包 start-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+        </dependency>
+        <!--测试架包 end-->
+        
+        <!--其他架包 start-->
+        <dependency>
+            <!--jackson用于JSON-->
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.13</version>
+        </dependency>
+
+        <dependency>
+            <!--用于文件上传-->
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+
+        <dependency>
+            <!--HttpServletRequest-->
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>3.0-alpha-1</version>
+        </dependency>
+        <!--其他架包 end-->
+
+    </dependencies>
+    <!--架包依赖 end-->
+
+    <build>
+        <finalName>youmeekssh</finalName>
+    </build>
+</project>
