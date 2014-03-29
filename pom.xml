@@ -28,15 +28,15 @@
             <version>${spring.version}</version>
         </dependency>
         <dependency>
-            <!--spring测试架包-->
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-        <dependency>
             <!--springMVC架包-->
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <!--spring测试架包-->
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
             <version>${spring.version}</version>
         </dependency>
         <!--spring架包 end-->
@@ -111,6 +111,13 @@
         <!--测试架包 end-->
         
         <!--其他架包 start-->
+        <dependency>
+            <!--日志记录-->
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+        
         <dependency>
             <!--jackson用于JSON-->
             <groupId>org.codehaus.jackson</groupId>
