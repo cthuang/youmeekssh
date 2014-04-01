@@ -137,6 +137,8 @@
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
             <version>3.0-alpha-1</version>
+            <!--这个作用域作用是编译用,发布的时候不用,主要是因为tomcat这类容器默认是有这个包的,但是我们项目编译里面如果不去引用tomcat的容器,项目会编译失败-->
+            <scope>provided</scope>
         </dependency>
         <!--其他架包 end-->
 
