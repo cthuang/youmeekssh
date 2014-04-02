@@ -26,8 +26,6 @@
           <element id="library" level="project" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final" />
           <element id="library" level="project" name="Maven: org.hibernate.common:hibernate-commons-annotations:4.0.2.Final" />
           <element id="library" level="project" name="Maven: org.javassist:javassist:3.15.0-GA" />
-          <element id="library" level="project" name="Maven: org.hibernate:antlr:2.7.5H3" />
-          <element id="library" level="project" name="Maven: org.dom4j:com.springsource.org.dom4j:1.6.1" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.21" />
           <element id="library" level="project" name="Maven: com.alibaba:druid:1.0.4" />
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
