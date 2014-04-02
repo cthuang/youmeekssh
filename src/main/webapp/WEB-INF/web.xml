@@ -8,12 +8,12 @@
     <display-name>youmeekssh Web Application</display-name>
     <!--webapp的项目名称 end-->
 
-    <!--指定spring配置位置 start-->
+    <!--指定spring配置位置,以及hibernate配置文件 start-->
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:spring.xml</param-value>
+        <param-value>classpath:spring.xml,classpath:spring-hibernate.xml</param-value>
     </context-param>
-    <!--指定spring配置位置 end-->
+    <!--指定spring配置位置,以及hibernate配置文件 end-->
 
     <!--指定spring监听器 start-->
     <listener>
