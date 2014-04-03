@@ -13,7 +13,7 @@
 
     <!--spring版本变量 start-->
     <properties>
-        <spring.version>3.2.0.RELEASE</spring.version>
+        <spring.version>3.1.2.RELEASE</spring.version>
     </properties>
     <!--spring版本变量 end-->
 
@@ -21,10 +21,38 @@
     <dependencies>
         <!--spring架包 start-->
         <dependency>
-            <!--spring核心架包-->
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <!--这个变量指代上面的-->
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-expression</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
             <version>${spring.version}</version>
         </dependency>
         <dependency>
@@ -44,47 +72,12 @@
 
         <!--hibernate4架包 start-->
         <dependency>
+            <!--引入这个架包其他对应关联的也会被自动引入-->
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>4.2.2.Final</version>
+            <!--<version>4.2.2.Final</version>-->
+            <version>4.1.7.Final</version>
         </dependency>
-        <!--下面这些jar在引入hibernate4会自动引入-->
-        <!--<dependency>-->
-            <!--<groupId>org.hibernate.javax.persistence</groupId>-->
-            <!--<artifactId>hibernate-jpa-2.0-api</artifactId>-->
-            <!--<version>1.0.1.Final</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.hibernate.common</groupId>-->
-            <!--<artifactId>hibernate-commons-annotations</artifactId>-->
-            <!--<version>4.0.2.Final</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--&lt;!&ndash;不知道这个是不是hibernate这个antlr&ndash;&gt;-->
-            <!--<groupId>org.hibernate</groupId>-->
-            <!--<artifactId>antlr</artifactId>-->
-            <!--<version>2.7.5H3</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.dom4j</groupId>-->
-            <!--<artifactId>com.springsource.org.dom4j</artifactId>-->
-            <!--<version>1.6.1</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.javassist</groupId>-->
-            <!--<artifactId>javassist</artifactId>-->
-            <!--<version>3.15.0-GA</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.jboss.logging</groupId>-->
-            <!--<artifactId>jboss-logging</artifactId>-->
-            <!--<version>3.1.0.GA</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.jboss.spec.javax.transaction</groupId>-->
-            <!--<artifactId>jboss-transaction-api_1.1_spec</artifactId>-->
-            <!--<version>1.0.1.Final</version>-->
-        <!--</dependency>-->
         <!--hibernate4架包 end-->
 
         <!--数据库连接以及JDBC组件架包 start-->
@@ -116,6 +109,19 @@
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
             <version>1.7.4.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <!-- jstl -->
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.2.1-b03</version>
+            <scope>provided</scope>
         </dependency>
         
         <dependency>
