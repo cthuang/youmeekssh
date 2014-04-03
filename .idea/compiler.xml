@@ -25,6 +25,9 @@
         <module name="youmeekssh" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="youmeekssh" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 
