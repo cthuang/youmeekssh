@@ -70,7 +70,7 @@ http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
 		<!-- 一种方式:自动扫描注解方式配置的hibernate类文件(这个通过注解比较好用) -->
 		<property name="packagesToScan">
 			<list>
-				<value>com.youmeek.ssh.dao</value>
+				<value>com.youmeek.ssh.domain</value>
 			</list>
 		</property>
 
