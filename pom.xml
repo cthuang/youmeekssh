@@ -76,7 +76,8 @@
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
             <!--<version>4.2.2.Final</version>-->
-            <version>4.1.7.Final</version>
+            <!--<version>4.1.7.Final</version>-->
+            <version>4.3.5.Final</version>
         </dependency>
         <!--hibernate4架包 end-->
 
