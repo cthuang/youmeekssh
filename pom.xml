@@ -75,7 +75,7 @@
             <!--引入这个架包其他对应关联的也会被自动引入-->
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <!--<version>4.2.2.Final</version>-->
+            <!--<version>4.2.11.Final</version>-->
             <!--<version>4.1.7.Final</version>-->
             <version>4.3.5.Final</version>
         </dependency>
