@@ -1,7 +1,7 @@
 package com.youmeek.ssh.service.impl;
 
 import com.youmeek.ssh.dao.UserDaoI;
-import com.youmeek.ssh.domain.User;
+import com.youmeek.ssh.model.User;
 import com.youmeek.ssh.service.UserServiceI;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

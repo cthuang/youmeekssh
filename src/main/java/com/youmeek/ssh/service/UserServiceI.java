@@ -1,6 +1,6 @@
 package com.youmeek.ssh.service;
 
-import com.youmeek.ssh.domain.User;
+import com.youmeek.ssh.model.User;
 
 import java.io.Serializable;
 

@@ -1,6 +1,6 @@
 package com.youmeek.ssh.dao;
 
-import com.youmeek.ssh.domain.User;
+import com.youmeek.ssh.model.User;
 
 import java.io.Serializable;
 

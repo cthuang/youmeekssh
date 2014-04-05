@@ -1,4 +1,4 @@
-package com.youmeek.ssh.domain;
+package com.youmeek.ssh.model;
 
 import javax.persistence.Column;
 import javax.persistence.Id;

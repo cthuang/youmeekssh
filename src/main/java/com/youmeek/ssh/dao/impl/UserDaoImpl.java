@@ -1,7 +1,7 @@
 package com.youmeek.ssh.dao.impl;
 
 import com.youmeek.ssh.dao.UserDaoI;
-import com.youmeek.ssh.domain.User;
+import com.youmeek.ssh.model.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;

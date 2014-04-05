@@ -1,6 +1,6 @@
 package com.youmeek.ssh.service.impl;
 
-import com.youmeek.ssh.domain.User;
+import com.youmeek.ssh.model.User;
 import com.youmeek.ssh.service.UserServiceI;
 import org.junit.After;
 import org.junit.Before;
