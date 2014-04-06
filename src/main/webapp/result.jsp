@@ -7,6 +7,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
+    <script type="text/javascript" src="template/youmeek/statics/js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="template/youmeek/statics/js/index.js"></script>
+    
 
     <style type="text/css">
 
@@ -23,9 +26,9 @@
 <%--页头结束--%>
 
 <%--页面主体内容 start--%>
-hello world from Judas.n 2014-04-06<br>
-
-
+${user.name}<br>
+------------<br>
+${user.id}
 <%--页面主体内容 end--%>
 
 <%--页脚开始--%>

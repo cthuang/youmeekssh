@@ -7,6 +7,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
+    <script type="text/javascript" src="statics/js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="statics/js/index.js"></script>
+    
 
     <style type="text/css">
 
@@ -24,6 +27,11 @@
 
 <%--页面主体内容 start--%>
 hello world from Judas.n 2014-04-06<br>
+<form id="form1" name="form1">
+    <input type="text" id="userId" name="userId"/><br>
+    <input type="text" id="userName" name="userName"/><br>
+    <input id="btnSubmit" name="btnSubmit" type="button" value="发送请求按钮"/>
+</form>
 
 
 <%--页面主体内容 end--%>

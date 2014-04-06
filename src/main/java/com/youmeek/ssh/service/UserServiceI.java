@@ -11,5 +11,7 @@ public interface UserServiceI {
 	void springTest();
 
 	public Serializable saveUser(User user);
+
+	public User getUser(String userId);
 	
 }

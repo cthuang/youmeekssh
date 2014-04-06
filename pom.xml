@@ -11,11 +11,12 @@
     <url>http://maven.apache.org</url>
     <!--项目基本信息 end-->
 
-    <!--spring版本变量 start-->
+    <!--版本变量设置 start-->
     <properties>
         <spring.version>3.1.2.RELEASE</spring.version>
+        <hibernate.version>4.2.11.Final</hibernate.version>
     </properties>
-    <!--spring版本变量 end-->
+    <!--版本变量设置 end-->
 
     <!--架包依赖 start-->
     <dependencies>
@@ -75,7 +76,7 @@
             <!--引入这个架包其他对应关联的也会被自动引入-->
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>4.2.11.Final</version>
+            <version>${hibernate.version}</version>
             <!--<version>4.1.7.Final</version>-->
             <!--跑test会报错<version>4.3.5.Final</version>-->
         </dependency>
@@ -191,7 +192,11 @@
                 <artifactId>tomcat6-maven-plugin</artifactId>
                 <version>2.1</version>
                 <configuration>
-                    <path>/youmeekssh</path>
+                    <path>/youmeekssh</path><!--项目访问路径-->
+                    <port>8080</port>
+                    <uriEncoding>UTF-8</uriEncoding><!--tomcat的url编码  达到和修改server.xml文件一样的功能-->
+                    <url>http://localhost:8080/manager/html</url><!--配置远程tomcat管理的连接路径地址(固定的一个链接)-->
+                    <server>tomcat6</server>
                 </configuration>
             </plugin>
 

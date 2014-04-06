@@ -9,4 +9,5 @@ import java.io.Serializable;
  */
 public interface UserDaoI {
 	public Serializable saveUser(User user);
+	public User getUser(String userId);
 }

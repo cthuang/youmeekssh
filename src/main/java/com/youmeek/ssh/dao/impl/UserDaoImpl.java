@@ -16,6 +16,8 @@ import java.io.Serializable;
 @Repository("userDao")
 public class UserDaoImpl implements UserDaoI {
 
+	@Autowired
+	@Qualifier("sessionFactory")
 	private SessionFactory sessionFactory;
 
 	public SessionFactory getSessionFactory() {
@@ -23,8 +25,6 @@ public class UserDaoImpl implements UserDaoI {
 	}
 
 	//2014年4月4日 00:15:20直接只使用@Autowired,这里提示sessionFactory没办法注入，必须再加上@Qualifier
-	@Autowired
-	@Qualifier("sessionFactory")
 	public void setSessionFactory(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
 	}
@@ -36,5 +36,10 @@ public class UserDaoImpl implements UserDaoI {
 	@Override
 	public Serializable saveUser(User user) {
 		return this.getCurrentSession().save(user);
+	}
+
+	@Override
+	public User getUser(String userId) {
+		return (User) this.getCurrentSession().get(User.class, userId);
 	}
 }

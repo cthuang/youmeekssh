@@ -36,4 +36,9 @@ public class UserServiceImpl implements UserServiceI {
 	public Serializable saveUser(User user) {
 		return userDaoI.saveUser(user);
 	}
+
+	@Override
+	public User getUser(String userId) {
+		return userDaoI.getUser(userId);
+	}
 }
