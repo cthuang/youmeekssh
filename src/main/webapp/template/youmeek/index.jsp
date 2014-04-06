@@ -28,12 +28,15 @@
 <%--页面主体内容 start--%>
 hello world from Judas.n 2014-04-06<br>
 <form id="form1" name="form1">
-    <input type="text" id="userId" name="userId"/><br>
-    <input type="text" id="userName" name="userName"/><br>
+    <input type="text" id="userId" name="userId" value=""/><br>
     <input id="btnSubmit" name="btnSubmit" type="button" value="发送请求按钮"/>
 </form>
-
-
+<hr>
+<form id="form1" name="form1">
+    <input type="text" id="userId2" name="userId2" value=""/><br>
+    <input type="text" id="userName2" name="userName2" value=""/><br>
+    <input id="btnSubmit2" name="btnSubmit2" type="button" value="发送请求按钮"/>
+</form>
 <%--页面主体内容 end--%>
 
 <%--页脚开始--%>

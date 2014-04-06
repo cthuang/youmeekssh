@@ -1,18 +1,16 @@
 $(document).ready(function () {
-	alert("Orz");
-	var userIdValue = $('#userId').val();
-	var userNameValue = $('#userName').val();
 
     $("#btnSubmit").click(function () {
+		var userIdValue = $('#userId').val();
 		alert("userIdValue=" + userIdValue);
+	    if (userIdValue == '') {
+		    return;
+	    }
         $.ajax({
-            type:"POST",
+            type:"GET",
             url: "http://127.0.0.1:8080/front/userController/"+userIdValue+"/getUser.do",
-            data: {
-	            //userId:userIdValue,
-	            userName:userNameValue
-            },
-            dataType: "json",
+            data: { },
+	        dataType: "json",
             success: function (data) {
                 alert("成功");
             },
