@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 import java.io.Serializable;
 
 /**
- * Created by judasn on 2014/4/3.
+ * @author Judas.n 2014年4月6日 22:49:47
  */
 @Repository("userDao")
 public class UserDaoImpl implements UserDaoI {

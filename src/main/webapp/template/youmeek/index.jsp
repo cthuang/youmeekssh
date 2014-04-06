@@ -4,18 +4,29 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>youmeekssh测试首页</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="keywords" content=""/>
-    <meta name="description" content=""/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
     <script type="text/javascript" src="statics/js/jquery-1.6.1.min.js"></script>
-    <script type="text/javascript" src="statics/js/index.js"></script>
-    
 
     <style type="text/css">
 
     </style>
 
     <script type="text/javascript">
+        $(document).ready(function () {
+            /*查询用户 start*/
+            $("#btnSubmit").click(function () {
+                var userIdValue = $('#userId').val();
+                if (userIdValue == '') {
+                    alert("用户ID不能为空");
+                    return;
+                }
+                window.open("/front/userController/getUser.do?id=" + userIdValue, "_blank");
+            });
+            /*查询用户 end*/
+
+        })
 
     </script>
 
@@ -26,17 +37,28 @@
 <%--页头结束--%>
 
 <%--页面主体内容 start--%>
-hello world from Judas.n 2014-04-06<br>
-<form id="form1" name="form1">
-    <input type="text" id="userId" name="userId" value=""/><br>
-    <input id="btnSubmit" name="btnSubmit" type="button" value="发送请求按钮"/>
-</form>
+<p>
+    <span style="font-size:medium; font-family:'微软雅黑';">
+    you know this is Hello World -- Judas.n 2014-04-06（<a href="http://YouMeek.com" target="_blank">http://YouMeek.com</a>）
+    </span>
+</p>
 <hr>
-<form id="form1" name="form1">
-    <input type="text" id="userId2" name="userId2" value=""/><br>
-    <input type="text" id="userName2" name="userName2" value=""/><br>
-    <input id="btnSubmit2" name="btnSubmit2" type="button" value="发送请求按钮"/>
+<p>
+<form id="form1" name="form1" action="/front/userController/saveUser.do" method="post">
+    新增用户：
+    <input type="text" id="name" name="name" value="" />
+    <input type="submit" value="提交" />
 </form>
+</p>
+<hr>
+<p>
+
+<form id="form1" name="form1">
+    查询的用户ID：
+    <input type="text" id="userId" name="userId" value="" />
+    <input id="btnSubmit" name="btnSubmit" type="button" value="查询" />
+</form>
+</p>
 <%--页面主体内容 end--%>
 
 <%--页脚开始--%>

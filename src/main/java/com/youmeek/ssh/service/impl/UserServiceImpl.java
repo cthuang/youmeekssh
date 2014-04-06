@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.io.Serializable;
 
 /**
- * Created by judasn on 2014/3/28.
+ * @author Judas.n 2014年4月6日 22:49:19
  */
 @Service("userService")
 public class UserServiceImpl implements UserServiceI {

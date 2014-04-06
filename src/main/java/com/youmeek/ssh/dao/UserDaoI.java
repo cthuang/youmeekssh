@@ -5,7 +5,7 @@ import com.youmeek.ssh.model.User;
 import java.io.Serializable;
 
 /**
- * Created by judasn on 2014/4/3.
+ * @author Judas.n 2014年4月6日 22:49:12
  */
 public interface UserDaoI {
 	public Serializable saveUser(User user);

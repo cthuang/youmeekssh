@@ -31,11 +31,11 @@ public class UserServiceImplTest {
 	//	userServiceI.springTest();
 	//}
 
-	@Test
-	public void testSaveUser() throws Exception {
-		UserServiceI userServiceI = (UserServiceI) applicationContext.getBean("userService");
-		User user = new User(UUID.randomUUID().toString(), "lili");
-		userServiceI.saveUser(user);
-
-	}
+	//@Test
+	//public void testSaveUser() throws Exception {
+	//	UserServiceI userServiceI = (UserServiceI) applicationContext.getBean("userService");
+	//	User user = new User(UUID.randomUUID().toString(), "lili");
+	//	userServiceI.saveUser(user);
+	//
+	//}
 }

@@ -1,8 +1,8 @@
 package com.youmeek.ssh.model;
 
 import javax.persistence.Column;
-import javax.persistence.Id;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
