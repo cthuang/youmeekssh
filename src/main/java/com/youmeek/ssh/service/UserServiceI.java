@@ -8,7 +8,6 @@ import java.io.Serializable;
  * @author Judas.n 2014年4月6日 22:49:26
  */
 public interface UserServiceI {
-	void springTest();
 
 	public Serializable saveUser(User user);
 

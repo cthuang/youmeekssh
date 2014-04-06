@@ -26,12 +26,6 @@ public class UserServiceImplTest {
 	}
 
 	//@Test
-	//public void testSpringTest() throws Exception {
-	//	UserServiceI userServiceI = (UserServiceI) applicationContext.getBean("userService");
-	//	userServiceI.springTest();
-	//}
-
-	//@Test
 	//public void testSaveUser() throws Exception {
 	//	UserServiceI userServiceI = (UserServiceI) applicationContext.getBean("userService");
 	//	User user = new User(UUID.randomUUID().toString(), "lili");
