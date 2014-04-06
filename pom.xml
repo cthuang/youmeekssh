@@ -160,6 +160,7 @@
     </dependencies>
     <!--架包依赖 end-->
 
+    <!--设置项目编译级别等设置 start-->
     <build>
         <plugins>
             <!-- Compiler 插件, 设定JDK版本 -->
@@ -231,4 +232,6 @@
             </plugin>
         </plugins>
     </build>
+    <!--设置项目编译级别等设置 end-->
+
 </project>
