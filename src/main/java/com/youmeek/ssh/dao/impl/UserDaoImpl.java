@@ -5,6 +5,7 @@ import com.youmeek.ssh.model.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 import java.io.Serializable;
@@ -14,15 +15,16 @@ import java.io.Serializable;
  */
 @Repository("userDao")
 public class UserDaoImpl implements UserDaoI {
-	
+
 	private SessionFactory sessionFactory;
 
 	public SessionFactory getSessionFactory() {
 		return sessionFactory;
 	}
 
-	//2014年4月4日 00:15:20这里提示sessionFactory没办法注入
+	//2014年4月4日 00:15:20直接只使用@Autowired,这里提示sessionFactory没办法注入，必须再加上@Qualifier
 	@Autowired
+	@Qualifier("sessionFactory")
 	public void setSessionFactory(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
 	}
