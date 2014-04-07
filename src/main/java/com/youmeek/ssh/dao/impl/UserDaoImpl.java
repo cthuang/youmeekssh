@@ -32,12 +32,22 @@ public class UserDaoImpl implements UserDaoI {
 	private Session getCurrentSession() {
 		return this.sessionFactory.getCurrentSession();
 	}
-	
+
+	/**
+	 * 保存用户
+	 * @param user
+	 * @return
+	 */
 	@Override
 	public Serializable saveUser(User user) {
 		return this.getCurrentSession().save(user);
 	}
 
+	/**
+	 * 通过ID查询用户信息
+	 * @param userId
+	 * @return
+	 */
 	@Override
 	public User getUser(String userId) {
 		return (User) this.getCurrentSession().get(User.class, userId);
